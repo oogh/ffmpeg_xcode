@@ -63,7 +63,7 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "-autioexit /Users/andy/&#x6d4b;&#x8bd5;&#x4e13;&#x7528;/xsb02.mp4"
+            argument = "-i /Users/andy/&#x6d4b;&#x8bd5;&#x4e13;&#x7528;/xsb02.mp4"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
