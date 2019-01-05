@@ -4,8 +4,8 @@
 
 > 配置调试参数  Edit Scheme -> Arguments -> + -> Arguments Passed On Launch
 >
-> 例如： ffplay -autoexit 文件名
-> 输入：-autoexit [空格] 文件名
+> 例如： ffplay -i 文件名
+> 输入：-i [空格] 文件名
 
 - Edit Scheme
 
@@ -13,4 +13,4 @@
 
 - 添加Arguments
 
-![image-20190104125040300](https://ws4.sinaimg.cn/large/006tNc79gy1fyugj1d5vej31ds0s0tjc.jpg)
+![image-20190105115617690](https://ws1.sinaimg.cn/large/006tNc79ly1fyvkkrt73ej31ds0s0ann.jpg)
