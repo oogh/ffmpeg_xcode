@@ -9971,7 +9971,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2FU6N534L7;
+				DEVELOPMENT_TEAM = R25N9JGHQ4;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ffmpeg3.4.1/libavutil/avutil_internal.pch";
 				HEADER_SEARCH_PATHS = (
 					"\"$(SRCROOT)/ffmpeg3.4.1\"",
@@ -9986,7 +9986,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2FU6N534L7;
+				DEVELOPMENT_TEAM = R25N9JGHQ4;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ffmpeg3.4.1/libavutil/avutil_internal.pch";
 				HEADER_SEARCH_PATHS = (
 					"\"$(SRCROOT)/ffmpeg3.4.1\"",
@@ -10108,7 +10108,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2FU6N534L7;
+				DEVELOPMENT_TEAM = R25N9JGHQ4;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/ffmpeg3.4.1\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -10118,7 +10118,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2FU6N534L7;
+				DEVELOPMENT_TEAM = R25N9JGHQ4;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/ffmpeg3.4.1\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -10302,7 +10302,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2FU6N534L7;
+				DEVELOPMENT_TEAM = R25N9JGHQ4;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/config.pch";
 				HEADER_SEARCH_PATHS = (
 					"\"$(SRCROOT)/ffmpeg3.4.1\"",
@@ -10317,7 +10317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2FU6N534L7;
+				DEVELOPMENT_TEAM = R25N9JGHQ4;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/config.pch";
 				HEADER_SEARCH_PATHS = (
 					"\"$(SRCROOT)/ffmpeg3.4.1\"",
@@ -10372,7 +10372,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2FU6N534L7;
+				DEVELOPMENT_TEAM = R25N9JGHQ4;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ffmpeg3.4.1/libavutil/avutil_internal.pch";
 				HEADER_SEARCH_PATHS = (
 					"\"$(SRCROOT)/ffmpeg3.4.1\"",
@@ -10387,7 +10387,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2FU6N534L7;
+				DEVELOPMENT_TEAM = R25N9JGHQ4;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ffmpeg3.4.1/libavutil/avutil_internal.pch";
 				HEADER_SEARCH_PATHS = (
 					"\"$(SRCROOT)/ffmpeg3.4.1\"",
