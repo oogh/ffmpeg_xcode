@@ -322,7 +322,7 @@ static int seek_by_bytes = -1;
 static int display_disable;
 static int borderless;
 static int startup_volume = 100;
-static int show_status = 1;
+static int show_status = 0; // 0: 不打印媒体信息，1: 打印媒体信息
 static int av_sync_type = AV_SYNC_AUDIO_MASTER;
 static int64_t start_time = AV_NOPTS_VALUE;
 static int64_t duration = AV_NOPTS_VALUE;
@@ -1527,9 +1527,9 @@ static double compute_target_delay(double delay, VideoState *is)
                 delay = 2 * delay;
         }
     }
-    
-    av_log(NULL, AV_LOG_TRACE, "video: delay=%0.3f A-V=%f\n",
-           delay, -diff);
+    // TODO(oogh): 2019/01/05 注释日志01
+//    av_log(NULL, AV_LOG_TRACE, "video: delay=%0.3f A-V=%f\n",
+//           delay, -diff);
     
     return delay;
 }
@@ -1694,17 +1694,18 @@ static void video_refresh(void *opaque, double *remaining_time)
                 av_diff = get_master_clock(is) - get_clock(&is->vidclk);
             else if (is->audio_st)
                 av_diff = get_master_clock(is) - get_clock(&is->audclk);
-            av_log(NULL, AV_LOG_INFO,
-                   "%7.2f %s:%7.3f fd=%4d aq=%5dKB vq=%5dKB sq=%5dB f=%"PRId64"/%"PRId64"   \r",
-                   get_master_clock(is),
-                   (is->audio_st && is->video_st) ? "A-V" : (is->video_st ? "M-V" : (is->audio_st ? "M-A" : "   ")),
-                   av_diff,
-                   is->frame_drops_early + is->frame_drops_late,
-                   aqsize / 1024,
-                   vqsize / 1024,
-                   sqsize,
-                   is->video_st ? is->viddec.avctx->pts_correction_num_faulty_dts : 0,
-                   is->video_st ? is->viddec.avctx->pts_correction_num_faulty_pts : 0);
+            // TODO(oogh): 2019/01/05 注释日志02
+//            av_log(NULL, AV_LOG_INFO,
+//                   "%7.2f %s:%7.3f fd=%4d aq=%5dKB vq=%5dKB sq=%5dB f=%"PRId64"/%"PRId64"   \r",
+//                   get_master_clock(is),
+//                   (is->audio_st && is->video_st) ? "A-V" : (is->video_st ? "M-V" : (is->audio_st ? "M-A" : "   ")),
+//                   av_diff,
+//                   is->frame_drops_early + is->frame_drops_late,
+//                   aqsize / 1024,
+//                   vqsize / 1024,
+//                   sqsize,
+//                   is->video_st ? is->viddec.avctx->pts_correction_num_faulty_dts : 0,
+//                   is->video_st ? is->viddec.avctx->pts_correction_num_faulty_pts : 0);
             fflush(stdout);
             last_time = cur_time;
         }
@@ -2413,9 +2414,10 @@ static int audio_decode_frame(VideoState *is)
 #ifdef DEBUG
     {
         static double last_clock;
-        printf("audio: delay=%0.3f clock=%0.3f clock0=%0.3f\n",
-               is->audio_clock - last_clock,
-               is->audio_clock, audio_clock0);
+        // TODO(oogh): 2019/01/05 注释日志03
+//        printf("audio: delay=%0.3f clock=%0.3f clock0=%0.3f\n",
+//               is->audio_clock - last_clock,
+//               is->audio_clock, audio_clock0);
         last_clock = is->audio_clock;
     }
 #endif
@@ -3695,7 +3697,8 @@ int main(int argc, char **argv)
     signal(SIGINT , sigterm_handler); /* Interrupt (ANSI).    */
     signal(SIGTERM, sigterm_handler); /* Termination (ANSI).  */
     
-    show_banner(argc, argv, options);
+    // TODO(oogh): 2019/01/02 注释ffplay相关信息的输出
+//    show_banner(argc, argv, options);
     
     parse_options(NULL, argc, argv, options, opt_input_file);
     
